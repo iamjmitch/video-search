@@ -1,7 +1,7 @@
 import React from 'react';
 
 class SearchBar extends React.Component {
-  state = { term: '' };
+  state = { term: 'Spider-man Far From Home Trailer' };
 
   onInputChange = e => {
     this.setState({ term: e.target.value });
