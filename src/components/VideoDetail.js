@@ -11,7 +11,13 @@ const VideoDetail = ({ video }) => {
   return (
     <div>
       <div className="ui embed">
-        <iframe title="Video Player" src={youtubeVideoURL} />
+        <iframe
+          title="Video Player"
+          src={youtubeVideoURL}
+          frameborder="0"
+          allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        />
       </div>
       <div className="ui segment">
         <h4 className="header">
