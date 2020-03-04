@@ -8,6 +8,7 @@ const VideoDetail = ({ video }) => {
   var parser = new DOMParser();
 
   const youtubeVideoURL = `https://www.youtube.com/embed/${video.id.videoId}`;
+
   return (
     <div>
       <div className="ui embed">
@@ -27,7 +28,7 @@ const VideoDetail = ({ video }) => {
           }
         </h4>
         <p className="">
-          <b>Author: </b>
+          <b>Channel: </b>
           <br />
           {video.snippet.channelTitle}
         </p>
